@@ -9,8 +9,8 @@ class Anagram
 
   def match(words_array)
     binding.pry
-    word = @word.split.sort
-    words_array.find_all{|word| word.split.sort == word}
+    word = @word.split("").sort
+    words_array.find_all{|word| word.split("").sort == word}
   end
 
 end
